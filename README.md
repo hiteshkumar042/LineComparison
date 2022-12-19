@@ -1,6 +1,6 @@
 ## LineComparison
 
-UC1- calculate length of two co-ordinates.
+UC1- Calculate length of two co-ordinates.
 
 UC2 - To check equality of two lines based on the end points.
 
