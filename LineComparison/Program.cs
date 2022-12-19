@@ -16,7 +16,7 @@
             double y2 = Convert.ToDouble(Console.ReadLine());
 
             double lengthOfFirstLine = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-            Console.WriteLine("\nlength of 1st Line is : " + lengthOfFirstLine);
+            Console.WriteLine("Length of 1st Line is : " + lengthOfFirstLine);
 
             Console.WriteLine("Enter X3 co-ordinate : ");
             double x3 = Convert.ToDouble(Console.ReadLine());
@@ -29,15 +29,19 @@
 
             double lengthOfSecondLine = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
 
-            Console.WriteLine("\nlength of 2nd Line is : " + lengthOfSecondLine);
-            
+            Console.WriteLine("Length of 2nd Line is : " + lengthOfSecondLine);
+            //UC2 & UC3
             if(lengthOfFirstLine==lengthOfSecondLine)
             {
                 Console.WriteLine("Lines are Equal");
             }
+            else if (lengthOfFirstLine>=lengthOfSecondLine)
+            {
+                Console.WriteLine("1st Line is greater than 2nd Line");
+            }
             else
             {
-                Console.WriteLine("Lines are not Equal");
+                Console.WriteLine("1st Line is smaller than 2nd Line");
             }
         }
     }
