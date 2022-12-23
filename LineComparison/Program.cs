@@ -30,19 +30,24 @@
             double lengthOfSecondLine = Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y3), 2));
 
             Console.WriteLine("Length of 2nd Line is : " + lengthOfSecondLine);
-            //UC2 & UC3
-            if(lengthOfFirstLine==lengthOfSecondLine)
+            //UC4 - CompareTo Method
+             int returnVal = lengthOfFirstLine.CompareTo(lengthOfSecondLine);
+             Console.WriteLine(returnVal);
+            //UC2 - Line Equality
+            if (returnVal == 0)
             {
                 Console.WriteLine("Lines are Equal");
             }
-            else if (lengthOfFirstLine>=lengthOfSecondLine)
+            //UC3 - Line Comparision
+            else if (returnVal > 0)
             {
-                Console.WriteLine("1st Line is greater than 2nd Line");
+                Console.WriteLine("Line 1 is greater than Line 2");
             }
             else
             {
-                Console.WriteLine("1st Line is smaller than 2nd Line");
+                Console.WriteLine("Line 1 is smaller than Line 2");
             }
+            
         }
     }
 }
